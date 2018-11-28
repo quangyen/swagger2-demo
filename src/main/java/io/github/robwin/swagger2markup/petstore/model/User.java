@@ -20,9 +20,7 @@
 package io.github.robwin.swagger2markup.petstore.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import io.swagger.annotations.ApiModelProperty;
 import io.github.robwin.swagger2markup.petstore.repository.Identifiable;
-
 import javax.validation.constraints.Size;
 
 public class User implements Identifiable<String> {
@@ -94,7 +92,7 @@ public class User implements Identifiable<String> {
     this.phone = phone;
   }
 
-  @ApiModelProperty(value = "User Status", allowableValues = "1-registered,2-active,3-closed")
+//  @ApiModelProperty(value = "User Status", allowableValues = "1,2,3")
   public int getUserStatus() {
     return userStatus;
   }

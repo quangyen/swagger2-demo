@@ -19,6 +19,10 @@
 
 package io.github.robwin.swagger2markup.petstore.controller;
 
+import io.github.robwin.swagger2markup.petstore.Responses;
+import io.github.robwin.swagger2markup.petstore.model.Pet;
+import io.github.robwin.swagger2markup.petstore.model.Pets;
+import io.github.robwin.swagger2markup.petstore.repository.MapBackedRepository;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -26,13 +30,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import io.github.robwin.swagger2markup.petstore.Responses;
-import io.github.robwin.swagger2markup.petstore.model.Pet;
-import io.github.robwin.swagger2markup.petstore.model.Pets;
-import io.github.robwin.swagger2markup.petstore.repository.MapBackedRepository;
-
 import java.util.List;
-
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.*;

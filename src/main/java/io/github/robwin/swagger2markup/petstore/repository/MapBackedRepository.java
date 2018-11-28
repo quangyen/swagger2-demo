@@ -22,7 +22,6 @@ package io.github.robwin.swagger2markup.petstore.repository;
 import com.google.common.base.Predicate;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.Iterables;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

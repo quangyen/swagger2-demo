@@ -19,17 +19,16 @@
 
 package io.github.robwin.swagger2markup.petstore.controller;
 
+import io.github.robwin.swagger2markup.petstore.model.Order;
+import io.github.robwin.swagger2markup.petstore.repository.MapBackedRepository;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import io.github.robwin.swagger2markup.petstore.model.Order;
-import io.github.robwin.swagger2markup.petstore.repository.MapBackedRepository;
-
+import static io.github.robwin.swagger2markup.petstore.Responses.ok;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.*;
-import static io.github.robwin.swagger2markup.petstore.Responses.ok;
 
 @Controller
 @RequestMapping(value = "/stores", produces = APPLICATION_JSON_VALUE)
